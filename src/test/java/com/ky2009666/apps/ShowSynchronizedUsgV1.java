@@ -48,6 +48,7 @@ public class ShowSynchronizedUsgV1 {
         thread1.start();
         thread2.start();
         thread1.join();
+        //join
         thread2.join();
         log.info("最终执行结果:{}",num);
     }
